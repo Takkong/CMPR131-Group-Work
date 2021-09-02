@@ -77,6 +77,7 @@ int menuOption() {
 void ToAscii() {
 	string inputText = string();
 	string ascii = string();
+	int ascii_size = 0;
 	do
 	{
 		switch (Option1Menu())
@@ -84,8 +85,8 @@ void ToAscii() {
 			case '0': return; break;
 			case 'A': inputText = stringInput(); break;
 			case 'B': ascii = textToAscii(inputText); break;
-			case 'C': asciiToBin(ascii); break;
-			case 'D': readTest(); break;
+			case 'C': ascii_size = asciiToBin(ascii); break;
+			case 'D': readTest(ascii_size); break;
 			default: cout << "\t\tERROR - Invalid option. Please re-enter."; break;
 		}
 		cout << "\n";
