@@ -43,15 +43,6 @@ public:
 
 
 	}
-	void printGrid() {
-
-
-
-
-
-
-
-	} 
 	void runNQueens() {
 
 		cout << "\n\t The n-queens puzzle is the problem of placing n chess queens on a nxn chessboard";
